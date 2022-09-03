@@ -1,2 +1,2 @@
-# programmers
-코테용 저장소
+# python
+파이썬 코딩테스트 연습 모음
