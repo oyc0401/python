@@ -1,9 +1,9 @@
 def solution(id_list, report, k):
     answer = []
 
-    dic = {}
-    count = {}
-    bad_list = list()
+    dic = {} #
+    count = {} #
+    bad_list = list() #
     messageMap = {}
 
     # 배열 초기화
@@ -20,12 +20,10 @@ def solution(id_list, report, k):
     # 신고 받은 횟수 정리: count 만들기
     for key, value in dic.items():
         for ele in value:
-            print(key, ele)
             count[ele] += 1
 
     # 정지당하는 사람 설정: bad_id 만들기
     for key, val in count.items():
-        print(key, val)
         if val >= k:
             bad_list.append(key)
 
@@ -33,7 +31,6 @@ def solution(id_list, report, k):
     for key, value in dic.items():
         for ele in value:
             for bad in bad_list:
-                print(bad, ele)
                 if bad == ele:
                     messageMap[key] += 1
 
